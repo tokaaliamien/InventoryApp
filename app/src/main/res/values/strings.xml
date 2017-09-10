@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+    <string name="action_delete_product">Delete Product</string>
+    <string name="action_delete_all_products">Delete all products</string>
+    <string name="title_activity_detials">Detials Activity</string>
+    <string name="title_activity_add">Add New Product</string>
+    <string name="price_lable">Price: </string>
+    <string name="quantity_lable">Quantity: </string>
+    <string name="Supplier_lable">Supplier email: </string>
+    <string name="name_lable">Name: </string>
+    <string name="photo_lable">Photo: </string>
+    <string name="action_add">Add product</string>
+
+
+    <string name="product_insert_success_message">Product is added successfully</string>
+    <string name="product_insert_failure_message">Failure in adding the product</string>
+    <string name="empty_list_message">No products in inventory</string>
+
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="failed_to_delete_product">Failed to delete this procuct</string>
+    <string name="success_to_delete_product">Procuct successfully deleted</string>
+
+    <string name="delete_all_dialog_msg">Delete all products?</string>
+    <string name="failed_to_delete_products">Failed to delete procucts</string>
+    <string name="success_to_delete_products">Procucts successfully deleted</string>
+
+    <string name="decrement_error">Cannot decrement the quantity its already zero</string>
+    <string name="decrement_failed">Failed to decrement</string>
+    <string name="increment_failed">Failed to increment</string>
+
+    <string name="null_name">Product must have a name</string>
+    <string name="negative_price">Price must be positive integer</string>
+    <string name="negative_quantity">Quantity must be positive integer</string>
+    <string name="wrong_format_email">Email is not in the right format</string>
+    <string name="null_image">"Product must have a image"</string>
+
+
+</resources>
