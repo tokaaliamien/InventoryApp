@@ -32,8 +32,5 @@ public class InventoryContract {
         public final static String COLUMN_INVENTORY_SUPPLIER="supplier";
         public final static String COLUMN_INVENTORY_IMG="img";
 
-
-
-
     }
 }

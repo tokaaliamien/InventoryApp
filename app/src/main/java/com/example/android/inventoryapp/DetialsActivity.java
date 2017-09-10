@@ -37,7 +37,6 @@ import static android.widget.ImageView.ScaleType.CENTER_CROP;
 
 public class DetialsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
     private static final String LOG_TAG = DetialsActivity.class.getSimpleName();
-    private Uri currentProductUri;
     private static final int EXSITING_PRODUCTS_LOADER = 0;
     TextView nameTextView;
     TextView quantityTextView;
@@ -49,7 +48,7 @@ public class DetialsActivity extends AppCompatActivity implements LoaderManager.
     int productQuantity = 0;
     int productPrice = 0;
     Bitmap img;
-
+    private Uri currentProductUri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -198,9 +197,8 @@ public class DetialsActivity extends AppCompatActivity implements LoaderManager.
             }
 
             imgView.setScaleType(CENTER_CROP);
-            //imgView.setAdjustViewBounds(true);
-        }
 
+        }
 
     }
 

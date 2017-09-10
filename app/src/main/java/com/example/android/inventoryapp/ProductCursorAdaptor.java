@@ -95,11 +95,6 @@ public class ProductCursorAdaptor extends CursorAdapter {
             if (rowAffected == 0) {
                 Toast.makeText(context, context.getString(R.string.decrement_failed), Toast.LENGTH_SHORT).show();
             }
-
-
-
         }
-
-
     }
 }
