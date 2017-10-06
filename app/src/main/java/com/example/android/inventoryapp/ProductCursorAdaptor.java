@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CursorAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,15 +42,23 @@ public class ProductCursorAdaptor extends CursorAdapter {
 
     @Override
     public void bindView(View view, final Context context, final Cursor cursor) {
-        int idIndex = cursor.getColumnIndex(InventoryContract.InventoryEntry._ID);
-        int id = cursor.getInt(idIndex);
-        final Uri uri = ContentUris.withAppendedId(InventoryContract.InventoryEntry.CONTENT_URI , id);
+
 
         Button decrementButton = (Button) view.findViewById(R.id.product_quantity_decremint_button);
         //decrementButton.setTag();
         decrementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                View parentRow = (View) v.getParent().getParent();
+                ListView listView = (ListView) parentRow.getParent();
+                int position = listView.getPositionForView(parentRow);
+
+                int idIndex = cursor.getColumnIndex(InventoryContract.InventoryEntry._ID);
+                cursor.moveToPosition(position);
+                int id = cursor.getInt(idIndex);
+                Uri uri = ContentUris.withAppendedId(InventoryContract.InventoryEntry.CONTENT_URI, id);
+
+
                 decrementQuantity(context, cursor, uri);
             }
         });
