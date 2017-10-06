@@ -32,7 +32,6 @@ public class ProductCursorAdaptor extends CursorAdapter {
 
     public ProductCursorAdaptor(Context context, Cursor c) {
         super(context, c, 0);
-
     }
 
     @Override
@@ -42,7 +41,6 @@ public class ProductCursorAdaptor extends CursorAdapter {
 
     @Override
     public void bindView(View view, final Context context, final Cursor cursor) {
-
 
         Button decrementButton = (Button) view.findViewById(R.id.product_quantity_decremint_button);
         //decrementButton.setTag();
@@ -58,8 +56,8 @@ public class ProductCursorAdaptor extends CursorAdapter {
                 int id = cursor.getInt(idIndex);
                 Uri uri = ContentUris.withAppendedId(InventoryContract.InventoryEntry.CONTENT_URI, id);
 
-
                 decrementQuantity(context, cursor, uri);
+
             }
         });
 
