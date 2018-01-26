@@ -30,10 +30,10 @@
 
             <TextView
                 android:id="@+id/price"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
-                android:layout_weight="1"
+
                 android:text="$00.00"
                 android:textColor="@color/colorAccent"
                 android:textSize="20dp" />
@@ -51,24 +51,24 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/decrement_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:text="-"
-                android:id="@+id/decrement_button"
                 />
 
             <TextView
+                android:id="@+id/quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
                 android:padding="8dp"
-                android:id="@+id/quantity"/>
+                android:text="0" />
 
             <Button
+                android:id="@+id/increment_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:text="+"
-                android:id="@+id/increment_button"
 
                 />
         </LinearLayout>
@@ -80,10 +80,10 @@
             />
 
         <TextView
+            android:id="@+id/supplier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="temp@google.com"
-            android:id="@+id/supplier"
+            android:text="temp@google.com"
         />
 
 

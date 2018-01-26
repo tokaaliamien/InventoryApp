@@ -10,87 +10,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.inventoryapp.AddActivity">
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             style="@style/titles"
-            android:text="@string/name_lable"/>
-
-        <TextView
-            style="@style/titles"
-            android:text="@string/quantity_lable"/>
-
-        <TextView
-            style="@style/titles"
-            android:text="@string/price_lable"/>
-
-        <TextView
-            style="@style/titles"
-            android:text="@string/Supplier_lable"/>
-
-        <TextView
-            style="@style/titles"
-            android:text="@string/photo_lable"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp">
+            android:text="@string/name_lable" />
 
         <EditText
             android:id="@+id/name_edit_text"
-            android:inputType="textCapWords"
-            style="@style/EditorFieldStyle" />
+            style="@style/EditorFieldStyle"
+            android:inputType="textCapWords" />
+
+        <TextView
+            style="@style/titles"
+            android:text="@string/quantity_lable" />
 
         <EditText
             android:id="@+id/quantity_edit_text"
-            android:inputType="textCapWords"
             style="@style/EditorFieldStyle"
-            android:text="0"/>
+            android:inputType="textCapWords"
+            android:text="0" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <TextView
+            style="@style/titles"
+            android:text="@string/price_lable" />
 
-            <EditText
-                android:id="@+id/price_edit_text"
-                android:inputType="textCapWords"
-                style="@style/EditorFieldStyle"
-                android:minWidth="50dp"
-                android:text="0"/>
+        <EditText
+            android:id="@+id/price_edit_text"
+            style="@style/EditorFieldStyle"
+            android:inputType="textCapWords"
+            android:minWidth="50dp"
+            android:text="0" />
 
-            <TextView
-                style="@style/titles"
-                android:text="$"/>
-        </LinearLayout>
+        <TextView
+            style="@style/titles"
+            android:text="@string/Supplier_lable" />
 
         <EditText
             android:id="@+id/supplier_edit_text"
-            android:inputType="textCapWords"
             style="@style/EditorFieldStyle"
-            android:minWidth="50dp"
-            />
+            android:inputType="textEmailAddress"
+            android:minWidth="50dp" />
 
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/take_img"
-            android:id="@+id/take_img_button"
-            />
+        <TextView
+            style="@style/titles"
+            android:text="@string/photo_lable" />
+
 
         <ImageView
+            android:id="@+id/img"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/img"/>
-
-
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
 

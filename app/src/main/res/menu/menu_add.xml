@@ -3,8 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.inventoryapp.CatalogActivity">
     <item
-        android:id="@+id/action_add"
+        android:id="@+id/action_add_photo"
+        android:icon="@drawable/ic_action_add_a_photo"
+        android:orderInCategory="100"
+        android:showAsAction="always|collapseActionView"
+        android:title="Take a Photo" />
+
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/ic_action_done"
+        android:orderInCategory="101"
         android:title="@string/action_add"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_action_add"/>
+        app:showAsAction="always" />
 </menu>

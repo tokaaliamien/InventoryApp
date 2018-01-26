@@ -12,10 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/app_bar_height"
         android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        >
-
-
+        android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -23,13 +20,13 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
             <ImageView
+                android:id="@+id/img"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/img"
-                android:src="@drawable/no_photo"
                 android:scaleType="centerCrop"
-                />
+                android:src="@drawable/no_photo" />
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
